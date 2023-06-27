@@ -3,6 +3,7 @@ const { Sequelize } = require("sequelize");
 const database = new Sequelize({
   dialect: "sqlite",
   storage: "./bookshop.db",
+  logging: false,
 });
 
 const initializeConnection = async () => {
